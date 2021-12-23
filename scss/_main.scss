@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#FondoDelMismo{
+	background-color: #221c1c;
+}
+#Banner{
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../IMG/bela.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	
+	
+}
+
+
+.titulo1{
+	p{
+	@extend #FondoDelMismo;
+	color: red;
+	font-weight: map-get($miMap, light);
+	font-size: 40px;
+	text-decoration: underline;
+	text-align: center;
+	margin: 20px;
+	}
+	
+}
+.div{
+	@extend #FondoDelMismo;
+
+	p{
+		@extend #FondoDelMismo;		
+		
+		font-weight: map-get($miMap, bold);
+		font-size: 30px;
+		
+		color: red;
+		line-height: 1.5;
+		padding: 30px;		
+	}
+	
+}
+.parejas {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 250;
+	font-size: 30px;
+	background-color: $bgColor;
+	color: red;
+	list-style-type: square;
+	list-style-position: inside;
+		ul{
+			padding: 30px;
+	}
+	@extend #parejassinlinea;
+	}
+#parejassinlinea{
+	li{
+		a{
+			text-decoration: none;
+			padding: 30px;
+		}
+	}
+}
+#PICS {
+	margin-top: 10px;
+	padding-right: 	400px;
+	padding-left: 	500px;
+	background-color: $bgColor;	
+}

@@ -1,0 +1,9 @@
+@mixin Coloriento($colorPrincipal: #fff){
+	color: $colorPrincipal;	
+}
+
+@each $k, $v in $miMap{
+	.font-weight-#{$k}{
+		font-weight: $v;
+	}
+}

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap");
+/* line 2, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_main.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_main.scss */
+#FondoDelMismo, .titulo1 p, .div, .div p {
+  background-color: #221c1c;
+}
+
+/* line 10, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_main.scss */
+#Banner {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../IMG/bela.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* line 23, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_main.scss */
+.titulo1 p {
+  color: red;
+  font-weight: 300;
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+  margin: 20px;
+}
+
+/* line 37, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_main.scss */
+.div p {
+  font-weight: 700;
+  font-size: 30px;
+  color: red;
+  line-height: 1.5;
+  padding: 30px;
+}
+
+/* line 49, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_main.scss */
+.parejas {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 250;
+  font-size: 30px;
+  background-color: #221c1c;
+  color: red;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+/* line 57, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_main.scss */
+.parejas ul {
+  padding: 30px;
+}
+
+/* line 64, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_main.scss */
+#parejassinlinea li a, .parejas li a {
+  text-decoration: none;
+  padding: 30px;
+}
+
+/* line 70, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_main.scss */
+#PICS {
+  margin-top: 10px;
+  padding-right: 400px;
+  padding-left: 500px;
+  background-color: #221c1c;
+}
+
+/* line 6, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_tools.scss */
+.font-weight-light {
+  font-weight: 300;
+}
+
+/* line 6, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_tools.scss */
+.font-weight-normal {
+  font-weight: 400;
+}
+
+/* line 6, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_tools.scss */
+.font-weight-bold {
+  font-weight: 700;
+}
+
+/* line 6, ../../../Desktop/Programacion/Bela+Gutierrez/scss/_tools.scss */
+.font-weight-extra-bold {
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=estilos.css.map */

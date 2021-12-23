@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "estilos.css",
+	"sources": [
+		"../scss/estilos.scss",
+		"../scss/_variables.scss",
+		"../scss/_main.scss",
+		"../scss/_tools.scss"
+	],
+	"sourcesContent": [
+		"@import \"variables\";\r\n@import \"main\";\r\n@import \"tools\";",
+		"$bgColor: #221c1c;\r\n$miMap:(light: 300, normal: 400,bold: 700, extra-bold: 800);",
+		"@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap');\r\n*{\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\n\r\n#FondoDelMismo{\r\n\tbackground-color: #221c1c;\r\n}\r\n#Banner{\r\n\theight: 100vh;\r\n\twidth: 100vw;\r\n\tbackground-image: url(../IMG/bela.jpg);\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-size: contain;\r\n\tbackground-position: center;\r\n\t\r\n\t\r\n}\r\n\r\n\r\n.titulo1{\r\n\tp{\r\n\t@extend #FondoDelMismo;\r\n\tcolor: red;\r\n\tfont-weight: map-get($miMap, light);\r\n\tfont-size: 40px;\r\n\ttext-decoration: underline;\r\n\ttext-align: center;\r\n\tmargin: 20px;\r\n\t}\r\n\t\r\n}\r\n.div{\r\n\t@extend #FondoDelMismo;\r\n\r\n\tp{\r\n\t\t@extend #FondoDelMismo;\t\t\r\n\t\t\r\n\t\tfont-weight: map-get($miMap, bold);\r\n\t\tfont-size: 30px;\r\n\t\t\r\n\t\tcolor: red;\r\n\t\tline-height: 1.5;\r\n\t\tpadding: 30px;\t\t\r\n\t}\r\n\t\r\n}\r\n.parejas {\r\n\tfont-family: 'Raleway', sans-serif;\r\n\tfont-weight: 250;\r\n\tfont-size: 30px;\r\n\tbackground-color: $bgColor;\r\n\tcolor: red;\r\n\tlist-style-type: square;\r\n\tlist-style-position: inside;\r\n\t\tul{\r\n\t\t\tpadding: 30px;\r\n\t}\r\n\t@extend #parejassinlinea;\r\n\t}\r\n#parejassinlinea{\r\n\tli{\r\n\t\ta{\r\n\t\t\ttext-decoration: none;\r\n\t\t\tpadding: 30px;\r\n\t\t}\r\n\t}\r\n}\r\n#PICS {\r\n\tmargin-top: 10px;\r\n\tpadding-right: \t400px;\r\n\tpadding-left: \t500px;\r\n\tbackground-color: $bgColor;\t\r\n}",
+		"@mixin Coloriento($colorPrincipal: #fff){\r\n\tcolor: $colorPrincipal;\t\r\n}\r\n\r\n@each $k, $v in $miMap{\r\n\t.font-weight-#{$k}{\r\n\t\tfont-weight: $v;\r\n\t}\r\n}"
+	],
+	"names": [],
+	"mappings": "AEAA,OAAO,CAAC,yFAAI;;AACZ,AAAA,CAAC,CAAA;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACV;;;AAED,AAAA,cAAc,EAed,QAAQ,CACP,CAAC,EAWF,IAAI,EAAJ,IAAI,CAGH,CAAC,CA9BY;EACb,gBAAgB,EAAE,OAAO;CACzB;;;AACD,AAAA,OAAO,CAAA;EACN,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,oBAAoB;EACtC,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,OAAO;EACxB,mBAAmB,EAAE,MAAM;CAG3B;;;AAGD,AACC,QADO,CACP,CAAC,CAAA;EAED,KAAK,EAAE,GAAG;EACV,WAAW,EDxBG,GAAG;ECyBjB,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,SAAS;EAC1B,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,IAAI;CACX;;;AAGF,AAGC,IAHG,CAGH,CAAC,CAAA;EAGA,WAAW,EDtCyB,GAAG;ECuCvC,SAAS,EAAE,IAAI;EAEf,KAAK,EAAE,GAAG;EACV,WAAW,EAAE,GAAG;EAChB,OAAO,EAAE,IAAI;CACb;;;AAGF,AAAA,QAAQ,CAAC;EACR,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,gBAAgB,EDpDP,OAAO;ECqDhB,KAAK,EAAE,GAAG;EACV,eAAe,EAAE,MAAM;EACvB,mBAAmB,EAAE,MAAM;CAK1B;;;AAZF,AAQE,QARM,CAQN,EAAE,CAAA;EACD,OAAO,EAAE,IAAI;CACd;;;AAGF,AAEE,gBAFc,CACf,EAAE,CACD,CAAC,EAfH,QAAQ,CAcP,EAAE,CACD,CAAC,CAAA;EACA,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,IAAI;CACb;;;AAGH,AAAA,KAAK,CAAC;EACL,UAAU,EAAE,IAAI;EAChB,aAAa,EAAG,KAAK;EACrB,YAAY,EAAG,KAAK;EACpB,gBAAgB,EDzEP,OAAO;CC0EhB;;;ACrEA,AAAA,kBAAkB,CAAA;EACjB,WAAW,EFLE,GAAG;CEMhB;;;AAFD,AAAA,mBAAmB,CAAD;EACjB,WAAW,EFLe,GAAG;CEM7B;;;AAFD,AAAA,iBAAiB,CAAC;EACjB,WAAW,EFLyB,GAAG;CEMvC;;;AAFD,AAAA,uBAAuB,CAAL;EACjB,WAAW,EFL0C,GAAG;CEMxD"
+}
